@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <!-- start header -->
+     <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                Media Handling
+            </a>
+            <ul class="main-nav">
+                <li><a href="#Image">Image</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Audio">Audio</a></li>
+                
+            </ul>
+        </div>
+     </div>
+    <!-- end header -->
+    <!-- start media -->
+<div class="landing">
+    <div class="text">
+        <h1>Show Media</h1>
+    </div>
+    <div class="container">
+        <!-- Image -->
+        <div class="image">
+            <h2>Image</h2>
+           <img src="1.jpg" alt="image">
+        </div>
+
+       <!-- Video -->
+       <h2>Video</h2>
+       <div class="video">
+            <video id="videoDisplay" controls>
+                <source src="1.mp4" type="video/mp4"> 
+                
+                 Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Audio -->
+         <div class="audio">
+            <h2>Audio</h2>
+            <audio id="audioDisplay" controls>
+                <source src="3.MP3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="mediaRecorder">
+            <h2>voicerecorder</h2>
+
+            <button  class="btn1" id="startBtn">Start</button> 
+            <button  class="btn2" id ="stopBtn" >Stop</button>
+            <ul id="recordingsList"></ul>
+            <script src="js/script.js"></script>
+         </div>
+     </div> 
+</div>
+    <!-- end media -->
+</body>
+
+</html>
